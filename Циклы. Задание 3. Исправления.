@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a = 0;
+    int b = 1;
+    cout << "Enter a number: " << endl;
+    cin >> a;
+    while (b < 11)
+    { 
+        cout << a << " x " << b << " = " << a * b << endl;
+        b++;
+    } 
+      
+
+    return 0;
+}

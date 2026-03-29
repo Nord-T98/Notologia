@@ -1,0 +1,37 @@
+#include <iostream>
+#include <Windows.h>
+
+int powerFunc(int value, int power) {
+    int result = 1;
+
+    for (int i = 0; i < power; i++) {
+        result *= value;
+    }
+
+    return result;
+}
+
+int main(int argc, char** argv)
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    int value, power, result;
+
+    value = 5;
+    power = 2;
+    result = powerFunc(value, power);
+    std::cout << value << " в степени " << power << " = " << result << std::endl;
+
+    value = 3;
+    power = 3;
+    result = powerFunc(value, power);
+    std::cout << value << " в степени " << power << " = " << result << std::endl;
+
+    value = 4;
+    power = 4;
+    result = powerFunc(value, power);
+    std::cout << value << " в степени " << power << " = " << result << std::endl;
+
+    return 0;
+}
